@@ -1,1 +1,4 @@
-console.log("hello");
+// getcurrentlocation();
+document
+  .getElementById("inputBtn")
+  .addEventListener("click", searchEventHandler);

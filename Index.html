@@ -6,13 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
-
+    <script src="./Assets/JS/functions.js" defer></script>
+    <script src="./Assets/JS/test.js" defer></script>
     <script src="./Assets/JS/script.js" defer></script>
 </head>
 
 <body>
-    <h1>weather</h1>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <aside>
+
+            <div class="internalDiv">
+                <h2>here</h2>
+                <form>
+                    <input id="searchInput" type="text" placeholder="City">
+                    <button id="inputBtn">submit</button>
+                </form>
+
+                <div class="internalDiv">
+                    Search History Here
+                </div>
+            </div>
+        </aside>
+        <div>
+            <section>
+                <div class="internalDiv">
+                    <h2>Current forecast here</h2>
+                </div>
+            </section>
+            <section>
+                <div class="internalDiv">
+                    <h2>5-Day Forecast here</h2>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>

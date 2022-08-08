@@ -1,3 +1,56 @@
-h1 {
-  background-color: aquamarine;
+body {
+  background-color: blanchedalmond;
+}
+
+header {
+  background-image: linear-gradient(to right bottom, #82b9f7, #0f5bb2, #82b9f7);
+  color: whitesmoke;
+  font-size: 2em;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: darkcyan;
+  height: 85vh;
+  display: flex;
+}
+aside {
+  background-color: darkgray;
+  height: 85vh;
+  width: 20vw;
+}
+
+section {
+  background-color: chocolate;
+  height: 42.5vh;
+  width: 80vw;
+}
+
+form {
+  margin: 10px 0;
+}
+
+input {
+  font-size: 20px;
+  font-stretch: 100%;
+  height: 32px;
+  font-variant-caps: all-small-caps;
+  text-align: start;
+  width: 70%;
+}
+button {
+  width: 26%;
+  height: 25px;
+}
+
+.internalDiv {
+  height: 100%;
+  border: dashed 1px black;
+  background-color: rgba(240, 248, 255, 0.711);
+  padding: 20px;
+  font-size: 2rem;
+  overflow: clip;
 }
