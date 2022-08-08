@@ -54,3 +54,7 @@ button {
   font-size: 2rem;
   overflow: clip;
 }
+
+#searchResults {
+  z-index: 99;
+}

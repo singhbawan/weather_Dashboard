@@ -30,12 +30,34 @@ function getWeatherData(coordArr) {
 //======================Sections=============//
 
 function renderDropDownMenu(element) {
+  var resultsEl = document.getElementById("searchResults");
+  var resultEl = document.createElement("li");
+  let data = parseWeatherData(element);
+  let countryNameLC = data.countryName.toLowerCase();
+  resultEl.innerHTML = `
+  <span>${data.cityName}, ${data.countryName} <img src="https://openweathermap.org/images/flags/${countryNameLC}.png"></span>
+  <span>${data.temp}${data.tempUnits}</span>
+  <span> <img src="https://openweathermap.org/img/wn/${data.weatherIcon}@2x.png"> </span>
+  <span>${data.lat}, ${data.lon}</span>
+`;
+  resultsEl.appendChild(resultEl);
   console.log(" render Drop Down Menu Function not ready");
-  console.log("Name of place ", element.name);
-  console.log("Country Name : ", element.sys.country);
 }
 
 //======================Sections=============//
+function parseWeatherData(json1) {
+  let result = {
+    cityName: json1.name,
+    countryName: json1.sys.country,
+    weatherIcon: json1.weather[0].icon,
+    weatherDescription: json1.weather[0].description,
+    tempUnits: units === "imperial" ? "&#8457;" : "&#8451;",
+    temp: Math.floor(json1.main.temp),
+    lon: json1.coord.lon,
+    lat: json1.coord.lat,
+  };
+  return result;
+}
 
 //======================Sections=============//
 

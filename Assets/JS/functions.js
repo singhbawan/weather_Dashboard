@@ -74,6 +74,9 @@ function getLatLong(name) {
     });
 }
 
+// Input : object with parameters of lat and lon
+// Return : Weather data as json
+
 async function weatherApiCall(coordObj) {
   lat = coordObj.lat;
   lon = coordObj.lon;
